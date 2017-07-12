@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+  
+    @IBAction func unwindToHomeScreen(segue: UIStoryboardSegue) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    override var prefersStatusBarHidden : Bool {
+        return true
+    }
 
 }
 

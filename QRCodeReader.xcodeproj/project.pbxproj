@@ -14,6 +14,7 @@
 		695AE3251F14BD49006218F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695AE3231F14BD49006218F6 /* LaunchScreen.storyboard */; };
 		695AE3301F14BD4A006218F6 /* QRCodeReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695AE32F1F14BD4A006218F6 /* QRCodeReaderTests.swift */; };
 		695AE33B1F14BD4B006218F6 /* QRCodeReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695AE33A1F14BD4B006218F6 /* QRCodeReaderUITests.swift */; };
+		695AE34D1F14C08D006218F6 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695AE34C1F14C08D006218F6 /* QRScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		695AE3361F14BD4B006218F6 /* QRCodeReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		695AE33A1F14BD4B006218F6 /* QRCodeReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderUITests.swift; sourceTree = "<group>"; };
 		695AE33C1F14BD4B006218F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		695AE34C1F14C08D006218F6 /* QRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				695AE3211F14BD49006218F6 /* Assets.xcassets */,
 				695AE3231F14BD49006218F6 /* LaunchScreen.storyboard */,
 				695AE3261F14BD4A006218F6 /* Info.plist */,
+				695AE34C1F14C08D006218F6 /* QRScannerViewController.swift */,
 			);
 			path = QRCodeReader;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					695AE3161F14BD48006218F6 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5DRLKH89EJ;
 						ProvisioningStyle = Automatic;
 					};
 					695AE32A1F14BD4A006218F6 = {
@@ -261,6 +265,7 @@
 			files = (
 				695AE31D1F14BD49006218F6 /* ViewController.swift in Sources */,
 				695AE31B1F14BD49006218F6 /* AppDelegate.swift in Sources */,
+				695AE34D1F14C08D006218F6 /* QRScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +417,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5DRLKH89EJ;
 				INFOPLIST_FILE = QRCodeReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.techphant.QRCodeReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +431,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5DRLKH89EJ;
 				INFOPLIST_FILE = QRCodeReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.techphant.QRCodeReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +514,7 @@
 				695AE3411F14BD4B006218F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		695AE3421F14BD4B006218F6 /* Build configuration list for PBXNativeTarget "QRCodeReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +523,7 @@
 				695AE3441F14BD4B006218F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		695AE3451F14BD4B006218F6 /* Build configuration list for PBXNativeTarget "QRCodeReaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +532,7 @@
 				695AE3471F14BD4B006218F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
